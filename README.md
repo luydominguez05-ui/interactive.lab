@@ -1,4 +1,4 @@
-# NEXUS Interactive Lab
+# Interactive Lab
 
 A compact, English-language interactive web experience featuring two modules:
 - **Logic Chamber:** three short challenges covering pattern recognition, conditional logic and algorithmic sequencing.
@@ -41,11 +41,11 @@ const PROFILE = {
 };
 ```
 
-Use your actual GitHub profile and a professional contact email. You can also edit the page title, closing copy and footer in `index.html`.
+You can also edit the page title, closing copy and footer in `index.html`.
 
 ## Publish with GitHub Pages
 
-1. Create a GitHub repository, for example `nexus-interactive-lab`.
+1. Create a GitHub repository, for example `interactive-lab`.
 2. Upload the contents of this folder to the repository root (so `index.html` is at the root).
 3. In GitHub, open **Settings → Pages**.
 4. Under **Build and deployment**, choose **Deploy from a branch**.
@@ -68,18 +68,6 @@ Use your actual GitHub profile and a professional contact email. You can also ed
 3. Add automated tests for the challenge logic and calculation model.
 4. Add a small technical "How it works" panel to make the implementation decisions visible to reviewers.
 
-
-## Epicor-inspired styling
-
-The interface uses a deep blue/teal palette with mint accents, taking broad visual cues from Epicor's public brand presence. This is an independent portfolio exercise and is not an official Epicor product, does not represent the company, and is not endorsed by Epicor.
-
-The Epicor wordmark is loaded from Wikimedia Commons:
-- File: `Epicor-logo.svg`
-- Original author/source identified by Commons: Epicor
-- File page: https://commons.wikimedia.org/wiki/File:Epicor-logo.svg
-- Original source cited there: https://www.epicor.com/globalassets/uploadedimages/shared/epicor-logo.svg
-
-The logo is used only to identify the company this personal demo is tailored toward. Epicor's name and logo remain trademarks of their respective owner. If you prefer not to use a third-party hosted logo, replace the `<img>` source in `index.html` with an asset supplied by Epicor or remove it.
 
 ## Source code viewer
 
