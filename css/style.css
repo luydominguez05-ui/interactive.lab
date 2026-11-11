@@ -62,9 +62,7 @@ h1 span, .closing h2 span { color:var(--cyan); }
 }
 
 
-/* Epicor-inspired visual language: deep blue/teal, mint and restrained warm accent.
-   NEXUS is an independent portfolio demo, not an Epicor product or endorsed project. */
-.epicor-logo { width:108px; max-height:32px; object-fit:contain; display:block; filter:brightness(0) invert(1); }
+   Interactive lab is an independent portfolio demo, not an Epicor product or endorsed project.
 .brand-divider { width:1px; height:24px; background:rgba(242,247,246,.3); margin:0 5px; }
 .brand-muted { color:#a8c0c5; }
 .brand-notice { max-width:1160px; margin:0 auto; padding:8px 28px 0; color:#77949c; font:9px var(--mono); letter-spacing:.04em; }
@@ -98,7 +96,6 @@ h1 span, .closing h2 span { color:var(--cyan); }
 .code-viewer-footer { display:flex; justify-content:space-between; gap:15px; padding:12px 16px; border-top:1px solid #203e49; color:#8eabb2; font:9px var(--mono); }
 .code-viewer-footer a { color:#90d2b5; text-decoration:none; }
 @media(max-width:650px) {
-  .epicor-logo { width:82px; }
   .brand-notice { padding:8px 20px 0; line-height:1.5; }
   .code-preview-heading { display:block; }
   .code-badge { display:inline-block; margin-top:15px; }
