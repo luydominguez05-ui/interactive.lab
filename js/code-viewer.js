@@ -1,7 +1,4 @@
-/* SOURCE VIEWER
- * Loads the actual project files from the same origin and displays them as plain text.
- * The code is never evaluated by this component. Use a local HTTP server or GitHub Pages.
- */
+
 (() => {
   const codeNode = document.getElementById("code-source");
   const fileNameNode = document.getElementById("code-filename");
@@ -32,7 +29,7 @@
       // textContent prevents the fetched source from being interpreted as HTML.
       codeNode.textContent = await response.text();
     } catch (error) {
-      codeNode.textContent = `Could not load this file (${error.message}).\\n\\nRun NEXUS through a local HTTP server, such as VS Code Live Server or: python -m http.server 8000`;
+      codeNode.textContent = `Could not load this file (${error.message}).\\n\\nRun interactive lab through a local HTTP server, such as VS Code Live Server or: python -m http.server 8000`;
     }
   }
 
