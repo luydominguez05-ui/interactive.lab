@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#025064">
+  <meta name="description" content="NEXUS Interactive Lab — explore logic challenges and a live data simulation.">
+  <title>NEXUS // Interactive Lab — Independent Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="NEXUS home">
+      <img class="epicor-logo" src="https://upload.wikimedia.org/wikipedia/commons/6/66/Epicor-logo.svg" alt="Epicor wordmark" onerror="this.style.display='none'">
+      <span class="brand-divider"></span>
+      <span>NEXUS<span class="brand-muted"> / INTERACTIVE LAB</span></span>
+    </a>
+    <div class="system-status"><span class="status-dot"></span> INTERACTIVE DEMO <span class="status-divider">|</span> BUILD 002</div>
+  </header>
+  <div class="brand-notice">Independent portfolio demonstration. Epicor name and wordmark are shown only to identify the company this project is tailored toward.</div>
+
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow"><span class="eyebrow-line"></span> INDEPENDENT DEVELOPER EXPERIMENT</div>
+      <h1>Think clearly.<br><span>Build what matters.</span></h1>
+      <p class="hero-copy">A compact interactive lab inspired by enterprise technology: explore computational thinking, experiment with operational data, and see how ideas become working solutions.</p>
+      <div class="hero-meta"><span>01 / LOGIC CHAMBER</span><span>02 / DATA UNIVERSE</span><span>EST. 2026</span></div>
+    </section>
+
+    <section class="module-grid" aria-label="Interactive modules">
+      <article class="module-card logic-card">
+        <div class="card-top"><span class="module-index">MODULE 01</span><span class="module-tag">THINK / SOLVE</span></div>
+        <div class="card-icon logic-icon" aria-hidden="true">⌘</div>
+        <h2>Logic Chamber</h2>
+        <p>Test your pattern recognition and deductive thinking with a sequence of short logic challenges.</p>
+        <div class="card-footer"><span>03 CHALLENGES</span><button class="text-button" data-open="logic">ENTER CHAMBER <span>↗</span></button></div>
+      </article>
+      <article class="module-card data-card">
+        <div class="card-top"><span class="module-index">MODULE 02</span><span class="module-tag">MODEL / EXPLORE</span></div>
+        <div class="card-icon data-icon" aria-hidden="true">◉</div>
+        <h2>Data Universe</h2>
+        <p>Adjust operational variables and watch a live simulation respond through metrics and visualizations.</p>
+        <div class="card-footer"><span>LIVE SIMULATION</span><button class="text-button" data-open="data">ENTER UNIVERSE <span>↗</span></button></div>
+      </article>
+    </section>
+
+    <section class="about-strip">
+      <span class="strip-symbol">✳</span>
+      <p><strong>Curiosity is a starting point.</strong> Building, testing and improving is how it becomes capability.</p>
+      <span class="strip-caption">NEXUS / EXPERIMENT 001</span>
+    </section>
+
+    <section class="code-preview" aria-labelledby="code-preview-title">
+      <div class="code-preview-heading">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-line"></span> UNDER THE INTERFACE</div>
+          <h2 id="code-preview-title">Explore the source code.</h2>
+          <p>Inspect the files that power this experience. Switch between modules to see how the application is structured.</p>
+        </div>
+        <span class="code-badge">READ-ONLY SOURCE VIEWER</span>
+      </div>
+      <div class="code-viewer">
+        <div class="code-tabs" role="tablist" aria-label="Source files">
+          <button class="code-tab active" role="tab" aria-selected="true" data-file="app">app.js</button>
+          <button class="code-tab" role="tab" aria-selected="false" data-file="logic">logic-chamber.js</button>
+          <button class="code-tab" role="tab" aria-selected="false" data-file="data">data-universe.js</button>
+          <button class="code-tab" role="tab" aria-selected="false" data-file="html">index.html</button>
+          <button class="code-tab" role="tab" aria-selected="false" data-file="css">style.css</button>
+        </div>
+        <div class="code-toolbar"><span id="code-filename">js/app.js</span><span id="code-language">JAVASCRIPT · SOURCE</span></div>
+        <pre class="code-content" tabindex="0"><code id="code-source">Loading source preview…</code></pre>
+        <div class="code-viewer-footer"><span>Displayed source is read-only and not executed here.</span><a id="github-source-link" href="https://github.com/" target="_blank" rel="noreferrer">VIEW REPOSITORY ↗</a></div>
+      </div>
+    </section>
+
+
+    <section class="technical-breakdown" id="technical-breakdown" aria-labelledby="technical-title">
+      <div class="technical-heading">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-line"></span> ENGINEERING NOTES</div>
+          <h2 id="technical-title">Technical breakdown<span>.</span></h2>
+          <p>A transparent look at the decisions behind the experience: what each module does, how its logic works, and which browser technologies make it possible.</p>
+        </div>
+        <span class="code-badge">BUILD 003 / DOCUMENTATION</span>
+      </div>
+      <div class="technical-grid">
+        <article class="technical-card">
+          <span class="technical-number">01 / LOGIC CHAMBER</span><h3>Challenge engine</h3>
+          <p>Each challenge is represented as structured data: prompt, options, correct answer and explanatory feedback. A small state machine tracks the current challenge, selected answer, score and completion state.</p>
+          <div class="tech-tags"><span>JavaScript</span><span>Arrays & objects</span><span>Event handling</span><span>Conditional logic</span></div>
+          <details class="tech-detail"><summary>HOW IT WORKS</summary><ol><li>Challenge definitions are stored as an array of objects.</li><li>The interface renders the current prompt and answer options.</li><li>Event listeners capture the selection and validate it.</li><li>Score and progress update before the next challenge is rendered.</li></ol></details>
+        </article>
+        <article class="technical-card">
+          <span class="technical-number">02 / DATA UNIVERSE</span><h3>Interactive model</h3>
+          <p>Three input parameters feed a deterministic calculation function. Output metrics and the chart are recalculated whenever a slider changes, making the relationship between assumptions and results visible.</p>
+          <div class="tech-tags"><span>JavaScript</span><span>Functions</span><span>DOM API</span><span>Chart.js</span></div>
+          <details class="tech-detail"><summary>HOW IT WORKS</summary><ol><li>Range inputs provide incoming volume, processing time and quality rate.</li><li>A calculation function derives estimated capacity, completed tasks and an efficiency index.</li><li>The DOM is updated with the latest values.</li><li>Chart.js updates the visualization using the new result set.</li></ol></details>
+        </article>
+        <article class="technical-card">
+          <span class="technical-number">03 / APPLICATION STRUCTURE</span><h3>Separation of concerns</h3>
+          <p>The application shell handles navigation and the dialog lifecycle, while each module owns its own behavior. This keeps the MVP understandable and makes future changes easier to isolate.</p>
+          <div class="tech-tags"><span>HTML5</span><span>CSS3</span><span>Vanilla JS</span><span>Modular files</span></div>
+          <details class="tech-detail"><summary>PROJECT MAP</summary><ul class="file-map"><li><code>index.html</code><span>Semantic page structure</span></li><li><code>css/style.css</code><span>Visual system and responsive layout</span></li><li><code>js/app.js</code><span>Navigation and modal lifecycle</span></li><li><code>js/logic-chamber.js</code><span>Challenge data and scoring logic</span></li><li><code>js/data-universe.js</code><span>Simulation calculations and chart</span></li><li><code>js/code-viewer.js</code><span>Read-only source file viewer</span></li></ul></details>
+        </article>
+        <article class="technical-card">
+          <span class="technical-number">04 / ENGINEERING PRINCIPLES</span><h3>Designed to be explored</h3>
+          <p>NEXUS is a front-end-only demonstration. It uses synthetic values, avoids collecting visitor data, and keeps the source visible so the implementation can be inspected directly.</p>
+          <div class="tech-tags"><span>Responsive UI</span><span>Readable source</span><span>Synthetic data</span><span>No backend</span></div>
+          <details class="tech-detail"><summary>SCOPE & LIMITATIONS</summary><ul><li>Operational figures are illustrative, not real company data.</li><li>The efficiency index is a simplified comparative indicator, not an industry KPI.</li><li>Chart.js is loaded from a CDN, so the chart requires an internet connection.</li><li>This version does not use a database, authentication or server-side processing.</li></ul></details>
+        </article>
+      </div>
+      <div class="technical-callout"><span>↳</span><p><strong>Why this matters:</strong> the goal is not to present a finished enterprise platform. It is to demonstrate how I break a problem into components, model behavior, validate inputs and communicate technical decisions.</p></div>
+    </section>
+
+    <section class="closing" id="closing">
+      <div><div class="eyebrow">END OF TRANSMISSION</div><h2>Ideas into systems.<br><span>Logic into solutions.</span></h2></div>
+      <div class="closing-links">
+        <a href="https://github.com/" target="_blank" rel="noreferrer" id="github-link">GITHUB ↗</a>
+        <a href="mailto:hello@example.com" id="email-link">CONTACT ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><span>© 2026 NEXUS INTERACTIVE LAB</span><span>INDEPENDENT PROJECT · NOT AFFILIATED WITH EPICOR</span></footer>
+
+  <!-- Module dialog -->
+  <div class="modal-backdrop" id="modal-backdrop" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-header"><div><span class="module-index" id="modal-kicker">MODULE</span><h2 id="modal-title">Module title</h2></div><button class="icon-button" id="close-modal" aria-label="Close dialog">×</button></div>
+      <div id="modal-content"></div>
+    </section>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/logic-chamber.js"></script>
+  <script src="js/data-universe.js"></script>
+  <script src="js/code-viewer.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
