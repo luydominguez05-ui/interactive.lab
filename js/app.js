@@ -6,10 +6,9 @@
   const kicker = document.getElementById("modal-kicker");
   const closeButton = document.getElementById("close-modal");
 
-  // PERSONALIZE THESE VALUES BEFORE PUBLISHING.
   const PROFILE = {
-    github: "https://github.com/YOUR_USERNAME",
-    email: "YOUR_EMAIL@example.com"
+    github: "https://github.com/luydominguez05-ui",
+    email: "lucydominguezperales@icloud.com"
   };
   document.getElementById("github-link").href = PROFILE.github;
   document.getElementById("email-link").href = "mailto:" + PROFILE.email;
